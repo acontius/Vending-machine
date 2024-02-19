@@ -1,4 +1,5 @@
 library ieee;
+use ieee.numeric_std.all
 use ieee.std_logic_1164.all;
 
 entity Vending is 
@@ -8,7 +9,7 @@ entity Vending is
         ticket              : in std_logic_vector(2 downto 0);
         Submit              : in std_logic;
         T5_out,T4_out,T15_out,Remaining_money : out std_logic;
-        value               :integer range 0 to 100000;
+        value               :out integer range 0 to 100000
     );
 end entity Vending;
 architecture Behavior of Vending is
