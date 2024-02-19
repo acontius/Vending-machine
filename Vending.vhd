@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 
 entity Vending is 
     port (
-        clk, RST            : in std_logic;
+        clk                 : in std_logic;
         Coin_in             : in std_logic_vector(2 downto 0);
         ticket              : in std_logic_vector(2 downto 0);
         Submit              : in std_logic;
