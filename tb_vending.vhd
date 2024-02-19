@@ -5,7 +5,7 @@ entity tb_vending is
 end entity;
 
 architecture Behavior of tb_vending is 
-    signal    clk, RST            : std_logic;
+    signal    clk                 : std_logic;
     signal    Coin_in             : std_logic_vector(2 downto 0);
     signal    ticket              : std_logic_vector(2 downto 0);
     signal    Submit              : std_logic;
@@ -30,45 +30,45 @@ clk <= not clk after 4 ns;
 
 process
 begin
-    wait for 4 ns then
+    wait for 4 ns ;
         Coin_in <= "01";
-    wait for 10 ns then
+    wait for 10 ns ;
         Coin_in <= "00";
 
 
-    wait for 15 ns then
+    wait for 15 ns ;
         Coin_in <=  "10";
-    wait for 10 ns then
+    wait for 10 ns ;
         Coin_in <= "00";
     
 
-    wait for 15 ns then
+    wait for 15 ns ;
         Coin_in <= "10";
-    wait for 10 ns then
+    wait for 10 ns ;
         Coin_in <= "00";
 
 
-    wait for 15 ns then
+    wait for 15 ns ;
         Coin_in <= "01";
-    wait for 10 ns then
+    wait for 10 ns ;
         Coin_in <= "00"; 
 
     
-    wait for 15 ns then
+    wait for 15 ns ;
         ticket <= "00";
-    wait for 10 ns then
+    wait for 10 ns ;
         ticket <= "00";
 
 
-    wait for 15 ns then
+    wait for 15 ns ;
         ticket <= "10";
-    wait for 10 ns then
+    wait for 10 ns ;
         ticket <= "00";
 
 
-    wait for 15 ns then
+    wait for 15 ns ;
         Submit <= '1';
-    wait for 10 ns then
+    wait for 10 ns ;
         Submit <= '0';
 
 
