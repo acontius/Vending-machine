@@ -7,14 +7,14 @@ end entity;
 
 architecture Behavior of tb_vending is 
 
-    component vending is
+    component Vending is
         port
         (   Coin_in clk           : in  std_logic;
             T15_out,T4_out,T5_out : in  std_logic;
             Submit                : in  std_logic;
             ticket                : out std_logic;
             value                 : out integer range 0 to 100000;    
-        )     
+        );
     end component;
 
     signal    clk                 : std_logic;
