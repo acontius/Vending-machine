@@ -2,11 +2,11 @@ library ieee;
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 
-entity tb_vending is
+entity sec_test is
 end entity;
 
 
-architecture Behavior of tb_vending is  
+architecture Behavior of sec_test is  
     component vending is
         port (
         clk                 : in std_logic;
