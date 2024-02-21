@@ -29,17 +29,17 @@ begin
         if Submit = '1' then 
             value <= temp;
             temp <= 0;
-        elsif ticket = "11" then
+        elsif ticket = "01" then
             if temp >= 500 then 
                 temp <= temp - 500;
                 T5_out <= '1';
             end if;
-        elsif ticket = "01" then
+        elsif ticket = "10" then
             if temp >= 1500 then
                 temp <= temp - 1500;
                 T15_out <= '1';
             end if;
-        elsif ticket = "10" then
+        elsif ticket = "11" then
             if temp >= 4000 then
                 temp <= temp - 4000;
                 T4_out <= '1';
