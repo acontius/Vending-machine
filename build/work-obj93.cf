@@ -1,0 +1,10 @@
+v 4
+file / "/home/aconius/Vending-machine/sec_test.vhd" "166f56082d0aa9cf9385bd5ded4d5e9d2267c066" "20240221141958.442":
+  entity sec_test at 1( 0) + 0 on 133;
+  architecture behavior of sec_test at 9( 103) + 0 on 134;
+file / "/home/aconius/Vending-machine/tb_vending.vhd" "113f81321e1ed9a6c8324d4b8f5902d3c4637c91" "20240221141306.942":
+  entity tb_vending at 1( 0) + 0 on 121;
+  architecture behavior of tb_vending at 9( 105) + 0 on 122;
+file / "/home/aconius/Vending-machine/vending.vhd" "99472706a6e4f60ed3a96062687e53746cb0831a" "20240221141958.442":
+  entity vending at 1( 0) + 0 on 131;
+  architecture behavior of vending at 16( 448) + 0 on 132;
